@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Trainings & Certifications</h1>
+
+    <ul class="shadow-lg">
+        <li *ngFor="let workexp of workExpList">
+            <h2>{{workexp.institute}}</h2>
+            <h3>{{workexp.course}}</h3>
+            <h4>{{workexp.duration}}</h4>
+            <ul>
+                <li *ngFor="let desc of workexp.description">{{desc}}</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="d-sm-flex .justify-content-sm-evenly shadow-lg  rounded certificate">
+    <div class="btn btn-outline-success shadow-lg ms-5">
+        <h2><a href="https://drive.google.com/drive/folders/1b6dM8qmqI56os_BaIwX_9AXmWuS1359F?usp=share_link" >Certificates</a></h2>
+    </div>
+    <div class="btn btn-outline-success shadow-lg ms-2">
+        <h2><a href="https://www.hackerrank.com/rohitsrcem2019" >HackerRank Profile</a></h2>
+    </div>
+</div>
+</div>
